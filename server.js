@@ -28,7 +28,7 @@ app.get('/todos', function(req, res){
 		filteredTodos = _.filter(filteredTodos, function(todo){
 			return todo.description.toLowerCase().indexOf(queryParams.q.toLowerCase()) > -1;
 		});
-	}
+	}npm 
 	
 	res.json(filteredTodos); // converts the array to json format	
 });
